@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import './Login.dart';
+import 'package:shark_security/function.dart';
+import 'login.dart';
 
 void main() {
-  runApp(SharkS());
+  runApp(const SharkS());
 }
 
 class SharkS extends StatelessWidget {
@@ -11,8 +12,9 @@ class SharkS extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: LoginScreen(),
+      home: Functionthing(),
       title: 'Shark Security',
+      debugShowCheckedModeBanner: false,
     );
   }
 }
