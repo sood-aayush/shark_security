@@ -130,13 +130,20 @@ class _FunctionthingState extends State<Functionthing> {
               height: 150,
               child: Image.asset('assets/SS.png'),
             ),
-            const Card(
-              child: SizedBox(
+            Card(
+              child: Container(
+                padding: EdgeInsets.fromLTRB(
+                  3,
+                  5,
+                  3,
+                  0,
+                ),
                 width: 300,
                 height: 60,
-                child: Text(
-                  "Rand Bhosdike let's secure your device",
-                ),
+                child: Text("Fr Baawe let's secure your device",
+                    style: TextStyle(
+                      fontSize: 16,
+                    )),
               ),
             ),
             GridView(
@@ -153,6 +160,9 @@ class _FunctionthingState extends State<Functionthing> {
                       children: [
                         const Icon(
                           Icons.lock,
+                        ),
+                        const SizedBox(
+                          height: 1.5,
                         ),
                         const Text(
                           'Lock My Device',
@@ -176,6 +186,9 @@ class _FunctionthingState extends State<Functionthing> {
                           const Icon(
                             Icons.backspace,
                           ),
+                          const SizedBox(
+                            height: 1.5,
+                          ),
                           const Text(
                             'Erase Contacts',
                           ),
@@ -196,6 +209,9 @@ class _FunctionthingState extends State<Functionthing> {
                         const Icon(
                           Icons.delete,
                         ),
+                        const SizedBox(
+                          height: 1.5,
+                        ),
                         const Text(
                           'Erase Data',
                         ),
@@ -214,6 +230,9 @@ class _FunctionthingState extends State<Functionthing> {
                       children: [
                         const Icon(
                           Icons.gps_fixed,
+                        ),
+                        const SizedBox(
+                          height: 1.5,
                         ),
                         const Text(
                           'Locate Device',
@@ -234,6 +253,9 @@ class _FunctionthingState extends State<Functionthing> {
                         const Icon(
                           Icons.wifi,
                         ),
+                        const SizedBox(
+                          height: 1.5,
+                        ),
                         const Text(
                           'Connectivity',
                         ),
@@ -252,6 +274,9 @@ class _FunctionthingState extends State<Functionthing> {
                       children: [
                         const Icon(
                           Icons.contact_page,
+                        ),
+                        const SizedBox(
+                          height: 1.5,
                         ),
                         const Text(
                           'Connectivity',
