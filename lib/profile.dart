@@ -15,7 +15,11 @@ class Profile extends StatelessWidget {
             Card(
               child: Row(
                 children: [
-                  Image.asset('assets/SS.png'),
+                  Container(
+                    height: 150,
+                    width: 150,
+                    child: Image.asset('assets/SS.png'),
+                  ),
                   Column(
                     children: [
                       Text(
